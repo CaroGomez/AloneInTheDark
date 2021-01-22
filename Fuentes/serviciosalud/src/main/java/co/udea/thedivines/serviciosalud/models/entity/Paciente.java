@@ -2,10 +2,11 @@ package co.udea.thedivines.serviciosalud.models.entity;
 
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name="pacientes")
-public class Paciente extends Persona{
+public class Paciente implements Serializable {
     @Id
     /*@GeneratedValue(strategy = GenerationType.IDENTITY)*/
     private Long id;
@@ -14,12 +15,10 @@ public class Paciente extends Persona{
     @Column
     private String RH;
 
-    @Override
     public Long getId() {
         return id;
     }
 
-    @Override
     public void setId(Long id) {
         this.id = id;
     }

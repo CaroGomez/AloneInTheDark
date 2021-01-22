@@ -9,7 +9,7 @@ import java.util.Date;
 
 @Entity
 @Table(name="personas")
-public abstract class Persona  implements Serializable {
+public class Persona  implements Serializable {
 
     @Id
     /*@GeneratedValue(strategy = GenerationType.IDENTITY)*/
