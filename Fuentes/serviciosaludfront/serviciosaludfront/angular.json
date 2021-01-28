@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "serviciosaludfront"
+    }
+  },
+  "defaultProject": "serviciosaludfront",
+  "cli": {
+    "analytics": "28bbf714-1785-41d3-b38f-22acf8a18737"
+  }
 }
