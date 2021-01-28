@@ -1,7 +1,7 @@
 package co.udea.thedivines.serviciosalud.models.services;
 
-import co.udea.thedivines.serviciosalud.models.dao.IPacienteDao;
 import co.udea.thedivines.serviciosalud.models.entity.Paciente;
+import co.udea.thedivines.serviciosalud.models.entity.Persona;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -9,14 +9,14 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 @Service
-public class PacienteServiceImpl implements IPacienteService{
+public class PersonaServiceImpl implements IPersonaService{
 
     @Autowired
-    private IPacienteDao pacienteDao;
+    private IPersonaService personaDao;
 
     @Override
     @Transactional(readOnly = true)
-    public List<Paciente> findAll(){
-        return (List<Paciente>) pacienteDao.findAll();
+    public List<Persona> findAll(){
+        return (List<Persona>) personaDao.findAll();
     }
 }
