@@ -1,0 +1,10 @@
+.component div {
+  height: 500px;
+  width: 300px;
+  display: inline-block;
+}
+
+#wy-us{
+  background-color: #5075FF;
+  color: white;
+}
