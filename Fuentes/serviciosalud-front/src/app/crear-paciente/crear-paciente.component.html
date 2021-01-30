@@ -1,11 +1,11 @@
-<form>
+<form (ngSubmit)="create()">
   <div class="mb-3">
     <label class="form-label">Nombre</label>
-    <input type="text" class="form-control" id="nombre-paciente" aria-describedby="emailHelp">
+    <input type="text" class="form-control" [(ngModel)]="paciente.nombre" name="nombre">
   </div>
   <div class="mb-3">
     <label class="form-label">Tipo Identificación</label>
-    <select class="form-select" id="tipo-identificacion-paciente">
+    <select class="form-select" [(ngModel)]="paciente.tipoIdentificacion" name="tipoIdentificacion" >
       <option>CC</option>
       <option>TI</option>
       <option>CE</option>
@@ -15,19 +15,19 @@
   </div>
   <div class="mb-3">
     <label class="form-label">Número de Documento</label>
-    <input type="number" class="form-control" id="id-paciente" aria-describedby="emailHelp">
+    <input type="number" class="form-control" [(ngModel)]="paciente.id" name="id">
   </div>
   <div class="mb-3">
     <label class="form-label">Fecha de Nacimiento</label>
-    <input type="date" class="form-control" id="fecha-nacimiento-paciente" aria-describedby="emailHelp">
+    <input type="date" class="form-control" [(ngModel)]="paciente.feNa" name="feNa">
   </div>
   <div class="mb-3">
     <label class="form-label">EPS</label>
-    <input type="text" class="form-control" id="eps-paciente" aria-describedby="emailHelp">
+    <input type="text" class="form-control" [(ngModel)]="paciente.EPS" name="EPS">
   </div>
   <div class="mb-3">
     <label class="form-label">Número Contácto</label>
-    <input type="text" class="form-control" id="contacto-paciente" aria-describedby="emailHelp">
+    <input type="text" class="form-control" [(ngModel)]="paciente.numeroContacto" name="numeroContacto">
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>

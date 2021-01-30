@@ -9,6 +9,7 @@ import { MainComponent } from './main/main.component';
 import { CrearCitaComponent } from './crear-cita/crear-cita.component';
 import { VerCitaComponent } from './ver-cita/ver-cita.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule} from '@angular/forms';
 
 const routes: Routes = [
   {path: '', component: MainComponent},
@@ -30,6 +31,7 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     HttpClientModule,
+    FormsModule,
     RouterModule.forRoot(routes)
   ],
   providers: [],
