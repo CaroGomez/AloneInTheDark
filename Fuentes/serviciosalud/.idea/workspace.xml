@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c2de51aa-4b13-4544-ad2e-9ed3709f8d77" name="Default Changelist" comment="" />
+    <list default="true" id="c2de51aa-4b13-4544-ad2e-9ed3709f8d77" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/udea/thedivines/serviciosalud/controllers/PacienteRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/udea/thedivines/serviciosalud/controllers/PacienteRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/udea/thedivines/serviciosalud/models/entity/Paciente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/udea/thedivines/serviciosalud/models/entity/Paciente.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +85,7 @@
       <workItem from="1611797632233" duration="9530000" />
       <workItem from="1611889862471" duration="3943000" />
       <workItem from="1611975238979" duration="229000" />
+      <workItem from="1611976410596" duration="378000" />
     </task>
     <servers />
   </component>

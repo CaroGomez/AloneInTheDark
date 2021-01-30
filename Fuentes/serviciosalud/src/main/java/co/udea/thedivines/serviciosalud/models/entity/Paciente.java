@@ -15,8 +15,6 @@ public class Paciente  implements Serializable {
     @Column
     private String nombre;
     @Column
-    private String apellido;
-    @Column
     private int edad;
     @Column
     private Long numeroContacto;
@@ -24,8 +22,6 @@ public class Paciente  implements Serializable {
     private String feNa;
     @Column
     private String EPS;
-    @Column
-    private String RH;
 
     public Paciente(){
         super();
@@ -35,12 +31,10 @@ public class Paciente  implements Serializable {
         this.id = id;
         this.tipoIdentificacion = tipoIdentificacion;
         this.nombre = nombre;
-        this.apellido = apellido;
         this.edad = edad;
         this.numeroContacto = numeroContacto;
         this.feNa = feNa;
         this.EPS = EPS;
-        this.RH = RH;
     }
 
     public Long getId() {
@@ -72,14 +66,6 @@ public class Paciente  implements Serializable {
         this.nombre = nombre;
     }
 
-
-    public String getApellido() {
-        return apellido;
-    }
-
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
-    }
     public int getEdad() {
         return edad;
     }
@@ -112,11 +98,4 @@ public class Paciente  implements Serializable {
         this.EPS = EPS;
     }
 
-    public String getRH() {
-        return RH;
-    }
-
-    public void setRH(String RH) {
-        this.RH = RH;
-    }
 }
