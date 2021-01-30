@@ -1,15 +1,15 @@
-<form>
+<form (ngSubmit)="create2()">
   <div class="mb-3">
     <label class="form-label">Fecha de la cita</label>
-    <input type="date" class="form-control" id="fecha-cita" aria-describedby="emailHelp">
+    <input type="date" class="form-control" [(ngModel)]="cita.feCita" name="feCita">
   </div>
   <div class="mb-3">
     <label class="form-label">Motivo de la consulta</label>
-    <input type="text" class="form-control" id="motivo-consulta" aria-describedby="emailHelp">
+    <input type="text" class="form-control" [(ngModel)]="cita.motivoConsulta" name="motivoConsula">
   </div>
   <div class="mb-3">
     <label class="form-label">Urgencia</label>
-    <select class="form-select" id="urgencia">
+    <select class="form-select" [(ngModel)]="cita.urgencia" name="urgencia">
       <option>Baja</option>
       <option>Media</option>
       <option>Alta</option>
@@ -17,7 +17,7 @@
   </div>
   <div class="mb-3">
     <label class="form-label">Tipo de consulta</label>
-    <select class="form-select" id="tipo-consulta">
+    <select class="form-select" [(ngModel)]="cita.tipoConsulta" name="tipoConsulta">
       <option>Urgencias</option>
       <option>Revisión General</option>
       <option>Cita Médica</option>
@@ -28,11 +28,11 @@
   </div>
   <div class="mb-3">
     <label class="form-label">Doctor Asignado</label>
-    <input type="text" class="form-control" id="doctor-asignado" aria-describedby="emailHelp">
+    <input type="text" class="form-control" [(ngModel)]="cita.doctor" aria-describedby="emailHelp">
   </div>
   <div class="mb-3">
     <label class="form-label">Identificación Paciente</label>
-    <input type="number" class="form-control" id="id-paciente">
+    <input type="number" class="form-control" [(ngModel)]="cita.id" name="id">
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>

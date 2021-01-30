@@ -10,6 +10,8 @@ import { CrearCitaComponent } from './crear-cita/crear-cita.component';
 import { VerCitaComponent } from './ver-cita/ver-cita.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule} from '@angular/forms';
+import { PacienteService } from './crear-paciente/paciente.service';
+import { CitaService } from './crear-cita/cita.service';
 
 const routes: Routes = [
   {path: '', component: MainComponent},
@@ -34,7 +36,11 @@ const routes: Routes = [
     FormsModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [],
+  providers: [
+    PacienteService,
+    CitaService
+  ],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }

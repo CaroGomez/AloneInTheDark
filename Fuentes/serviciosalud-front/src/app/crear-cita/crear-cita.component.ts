@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {Cita} from './cita';
+import {CitaService} from './cita.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-crear-cita',
@@ -6,10 +9,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./crear-cita.component.css']
 })
 export class CrearCitaComponent implements OnInit {
-
-  constructor() { }
+  public cita: Cita = new Cita();
+  constructor(private citaService: CitaService, private router: Router) { }
 
   ngOnInit(): void {
+  }
+  public create2(): void{
+    this.citaService.create2(this.cita).subscribe(
+      response => this.router.navigate([''])
+    );
   }
 
 }
