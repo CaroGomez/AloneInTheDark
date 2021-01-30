@@ -1,1 +1,2 @@
-INSERT INTO pacientes (id, eps, rh, apellido, edad, fe_na, nombre, numero_contacto, tipo_identificacion ) VALUES (1022099411, 'Savia Salud', 'O+', 'Higuita', 23, '26/12/1997', 'Andres', 3226106721, 'Cedula');
+INSERT INTO pacientes (id, eps, fe_na, nombre, numero_contacto, tipo_identificacion ) VALUES (1022099411, 'Savia Salud', '26/12/1997', 'Andres', 3226106721, 'Cedula');
+INSERT INTO citas(id, doctor, fecha_cita, motivo_consulta, nivel_urgencia, tipo_consulta) VALUES (1022099411, 'Carlos Jaramillo', '01/02/21', 'Dolor abdominal fuerte', 'Media', 'Urgencia');

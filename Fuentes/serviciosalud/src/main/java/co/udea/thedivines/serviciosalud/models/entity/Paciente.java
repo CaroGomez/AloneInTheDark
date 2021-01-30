@@ -2,11 +2,10 @@ package co.udea.thedivines.serviciosalud.models.entity;
 
 
 import javax.persistence.*;
-import java.io.Serializable;
 
 @Entity
 @Table(name="pacientes")
-public class Paciente  implements Serializable {
+public class Paciente  {
 
     @Id
     private Long id;
