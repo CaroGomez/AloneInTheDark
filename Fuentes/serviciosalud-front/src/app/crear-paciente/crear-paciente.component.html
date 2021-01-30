@@ -1,24 +1,33 @@
 <form>
-  <fieldset disabled>
-    <legend>Disabled fieldset example</legend>
-    <div class="mb-3">
-      <label for="disabledTextInput" class="form-label">Disabled input</label>
-      <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
-    </div>
-    <div class="mb-3">
-      <label for="disabledSelect" class="form-label">Disabled select menu</label>
-      <select id="disabledSelect" class="form-select">
-        <option>Disabled select</option>
-      </select>
-    </div>
-    <div class="mb-3">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
-        <label class="form-check-label" for="disabledFieldsetCheck">
-          Can't check this
-        </label>
-      </div>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </fieldset>
+  <div class="mb-3">
+    <label class="form-label">Nombre</label>
+    <input type="text" class="form-control" id="nombre-paciente" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Tipo Identificación</label>
+    <select class="form-select" id="tipo-identificacion-paciente">
+      <option>CC</option>
+      <option>TI</option>
+      <option>CE</option>
+      <option>Pasaporte</option>
+      <option>Registro Civil</option>
+    </select>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Número de Documento</label>
+    <input type="number" class="form-control" id="id-paciente" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Fecha de Nacimiento</label>
+    <input type="date" class="form-control" id="fecha-nacimiento-paciente" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label class="form-label">EPS</label>
+    <input type="text" class="form-control" id="eps-paciente" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Número Contácto</label>
+    <input type="text" class="form-control" id="contacto-paciente" aria-describedby="emailHelp">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
 </form>
