@@ -1,1 +1,1 @@
-INSERT INTO pacientes (id, apellido, edad, nombre ) VALUES (1022099411, 'Higuita', 23, 'Andres');
+INSERT INTO pacientes (id, eps, rh, apellido, edad, fe_na, nombre, numero_contacto, tipo_identificacion ) VALUES (1022099411, 'Savia Salud', 'O+', 'Higuita', 23, '26/12/1997', 'Andres', 3226106721, 'Cedula');
