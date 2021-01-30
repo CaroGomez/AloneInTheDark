@@ -37,7 +37,6 @@ public class PacienteRestController {
         Paciente pacienteActual = pacienteService.findById(id);
 
         pacienteActual.setNombre(paciente.getNombre());
-        pacienteActual.setEdad(paciente.getEdad());
         pacienteActual.setNumeroContacto(paciente.getNumeroContacto());
         pacienteActual.setFeNa(paciente.getFeNa());
         pacienteActual.setEPS(paciente.getEPS());
