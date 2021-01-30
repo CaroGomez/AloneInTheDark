@@ -7,11 +7,13 @@ import { CrearPacienteComponent } from './crear-paciente/crear-paciente.componen
 import { RouterModule, Router, Routes} from '@angular/router';
 import { MainComponent } from './main/main.component';
 import { CrearCitaComponent } from './crear-cita/crear-cita.component';
+import { VerCitaComponent } from './ver-cita/ver-cita.component';
 
 const routes: Routes = [
   {path: '', component: MainComponent},
   {path: 'crear-paciente', component: CrearPacienteComponent},
-  {path: 'crear-cita', component: CrearCitaComponent}
+  {path: 'crear-cita', component: CrearCitaComponent},
+  {path: 'ver-cita', component: VerCitaComponent}
 
   ];
 
@@ -21,7 +23,8 @@ const routes: Routes = [
     HeaderComponent,
     CrearPacienteComponent,
     MainComponent,
-    CrearCitaComponent
+    CrearCitaComponent,
+    VerCitaComponent
   ],
   imports: [
     BrowserModule,
