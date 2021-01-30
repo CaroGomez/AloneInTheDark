@@ -15,8 +15,6 @@ public class Paciente  implements Serializable {
     @Column
     private String nombre;
     @Column
-    private int edad;
-    @Column
     private Long numeroContacto;
     @Column
     private String feNa;
@@ -31,7 +29,6 @@ public class Paciente  implements Serializable {
         this.id = id;
         this.tipoIdentificacion = tipoIdentificacion;
         this.nombre = nombre;
-        this.edad = edad;
         this.numeroContacto = numeroContacto;
         this.feNa = feNa;
         this.EPS = EPS;
@@ -64,14 +61,6 @@ public class Paciente  implements Serializable {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
-    }
-
-    public int getEdad() {
-        return edad;
-    }
-
-    public void setEdad(int edad) {
-        this.edad = edad;
     }
 
     public Long getNumeroContacto() {
